@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		333E5AC2291882BD8B4DEC71 /* Pods_OZHTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5306FBAAFBCA408372BA10FA /* Pods_OZHTests.framework */; };
+		7F1C9E4886D398F24385301B /* Pods_OZH.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 792A7B6AB2044CAD666DEE26 /* Pods_OZH.framework */; };
+		CC3BDD712A2A221BFA672C3E /* Pods_OZHUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3415CCAEB6048CA8B6D9010 /* Pods_OZHUITests.framework */; };
 		F33126352073FAE0000AB485 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F33126342073FAE0000AB485 /* AppDelegate.m */; };
 		F33126382073FAE0000AB485 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F33126372073FAE0000AB485 /* ViewController.m */; };
 		F331263B2073FAE0000AB485 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F33126392073FAE0000AB485 /* Main.storyboard */; };
@@ -35,6 +38,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		20455A654D5F5D4FDC82BFDB /* Pods-OZH.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OZH.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OZH/Pods-OZH.debug.xcconfig"; sourceTree = "<group>"; };
+		42627ED3B44677724D57A659 /* Pods-OZHTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OZHTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OZHTests/Pods-OZHTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5306FBAAFBCA408372BA10FA /* Pods_OZHTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OZHTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C32A646153F4157A29AD1A9 /* Pods-OZHUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OZHUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-OZHUITests/Pods-OZHUITests.release.xcconfig"; sourceTree = "<group>"; };
+		732D62D520A9A4AFA2EFB0D8 /* Pods-OZH.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OZH.release.xcconfig"; path = "Pods/Target Support Files/Pods-OZH/Pods-OZH.release.xcconfig"; sourceTree = "<group>"; };
+		792A7B6AB2044CAD666DEE26 /* Pods_OZH.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OZH.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3415CCAEB6048CA8B6D9010 /* Pods_OZHUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OZHUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3C1B56465B47E5F507CC9D6 /* Pods-OZHTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OZHTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-OZHTests/Pods-OZHTests.release.xcconfig"; sourceTree = "<group>"; };
+		E26F26B1380297D6D51101D5 /* Pods-OZHUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OZHUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OZHUITests/Pods-OZHUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		F33126302073FAE0000AB485 /* OZH.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OZH.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F33126332073FAE0000AB485 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F33126342073FAE0000AB485 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -58,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F1C9E4886D398F24385301B /* Pods_OZH.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				333E5AC2291882BD8B4DEC71 /* Pods_OZHTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,12 +86,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC3BDD712A2A221BFA672C3E /* Pods_OZHUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5397FABA77146C9A420A8FFA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				792A7B6AB2044CAD666DEE26 /* Pods_OZH.framework */,
+				5306FBAAFBCA408372BA10FA /* Pods_OZHTests.framework */,
+				A3415CCAEB6048CA8B6D9010 /* Pods_OZHUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BB4EE32DAAE684FDF34BB0CE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				20455A654D5F5D4FDC82BFDB /* Pods-OZH.debug.xcconfig */,
+				732D62D520A9A4AFA2EFB0D8 /* Pods-OZH.release.xcconfig */,
+				42627ED3B44677724D57A659 /* Pods-OZHTests.debug.xcconfig */,
+				A3C1B56465B47E5F507CC9D6 /* Pods-OZHTests.release.xcconfig */,
+				E26F26B1380297D6D51101D5 /* Pods-OZHUITests.debug.xcconfig */,
+				5C32A646153F4157A29AD1A9 /* Pods-OZHUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		F33126272073FAE0000AB485 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +123,8 @@
 				F331264B2073FAE2000AB485 /* OZHTests */,
 				F33126562073FAE2000AB485 /* OZHUITests */,
 				F33126312073FAE0000AB485 /* Products */,
+				BB4EE32DAAE684FDF34BB0CE /* Pods */,
+				5397FABA77146C9A420A8FFA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -139,9 +179,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F331265C2073FAE2000AB485 /* Build configuration list for PBXNativeTarget "OZH" */;
 			buildPhases = (
+				559E5A261BCBD11A43F2BFBA /* [CP] Check Pods Manifest.lock */,
 				F331262C2073FAE0000AB485 /* Sources */,
 				F331262D2073FAE0000AB485 /* Frameworks */,
 				F331262E2073FAE0000AB485 /* Resources */,
+				49F3525F94D36EC6077A0071 /* [CP] Embed Pods Frameworks */,
+				BA15AC0CE38E0B857A409202 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -156,9 +199,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F331265F2073FAE2000AB485 /* Build configuration list for PBXNativeTarget "OZHTests" */;
 			buildPhases = (
+				6C6A12ABB3FEA6AC07A5D317 /* [CP] Check Pods Manifest.lock */,
 				F33126442073FAE2000AB485 /* Sources */,
 				F33126452073FAE2000AB485 /* Frameworks */,
 				F33126462073FAE2000AB485 /* Resources */,
+				A06871355BFA5AF8CC635107 /* [CP] Embed Pods Frameworks */,
+				7D9C47C3F87DCC2972C2F6E5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -174,9 +220,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F33126622073FAE2000AB485 /* Build configuration list for PBXNativeTarget "OZHUITests" */;
 			buildPhases = (
+				BAF56DAC420DC670A2106250 /* [CP] Check Pods Manifest.lock */,
 				F331264F2073FAE2000AB485 /* Sources */,
 				F33126502073FAE2000AB485 /* Frameworks */,
 				F33126512073FAE2000AB485 /* Resources */,
+				8EF83274C42C6372DE7897D1 /* [CP] Embed Pods Frameworks */,
+				A26CE29331B2D497C42FBE6E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -256,6 +305,156 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		49F3525F94D36EC6077A0071 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-OZH/Pods-OZH-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OZH/Pods-OZH-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		559E5A261BCBD11A43F2BFBA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OZH-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6C6A12ABB3FEA6AC07A5D317 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OZHTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7D9C47C3F87DCC2972C2F6E5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OZHTests/Pods-OZHTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8EF83274C42C6372DE7897D1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OZHUITests/Pods-OZHUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A06871355BFA5AF8CC635107 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OZHTests/Pods-OZHTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A26CE29331B2D497C42FBE6E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OZHUITests/Pods-OZHUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BA15AC0CE38E0B857A409202 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OZH/Pods-OZH-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BAF56DAC420DC670A2106250 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OZHUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F331262C2073FAE0000AB485 /* Sources */ = {
@@ -431,47 +630,40 @@
 		};
 		F331265D2073FAE2000AB485 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 20455A654D5F5D4FDC82BFDB /* Pods-OZH.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = OZH/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = xingshao.OZH;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		F331265E2073FAE2000AB485 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 732D62D520A9A4AFA2EFB0D8 /* Pods-OZH.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = OZH/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = xingshao.OZH;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 		F33126602073FAE2000AB485 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 42627ED3B44677724D57A659 /* Pods-OZHTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = OZHTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = xingshao.OZHTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -481,15 +673,12 @@
 		};
 		F33126612073FAE2000AB485 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A3C1B56465B47E5F507CC9D6 /* Pods-OZHTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = OZHTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = xingshao.OZHTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -499,14 +688,11 @@
 		};
 		F33126632073FAE2000AB485 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E26F26B1380297D6D51101D5 /* Pods-OZHUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = OZHUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = xingshao.OZHUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -516,14 +702,11 @@
 		};
 		F33126642073FAE2000AB485 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C32A646153F4157A29AD1A9 /* Pods-OZHUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = OZHUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = xingshao.OZHUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
