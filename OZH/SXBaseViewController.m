@@ -6,13 +6,13 @@
 //  Copyright © 2018年 xingshao. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "SXBaseViewController.h"
 
-@interface ViewController ()
+@interface SXBaseViewController ()
 
 @end
 
-@implementation ViewController
+@implementation SXBaseViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -20,11 +20,9 @@
     self.view.backgroundColor = [UIColor whiteColor];
 }
 
-
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
 
 @end

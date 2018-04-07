@@ -10,9 +10,11 @@
 		333E5AC2291882BD8B4DEC71 /* Pods_OZHTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5306FBAAFBCA408372BA10FA /* Pods_OZHTests.framework */; };
 		7F1C9E4886D398F24385301B /* Pods_OZH.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 792A7B6AB2044CAD666DEE26 /* Pods_OZH.framework */; };
 		CC3BDD712A2A221BFA672C3E /* Pods_OZHUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3415CCAEB6048CA8B6D9010 /* Pods_OZHUITests.framework */; };
-		F30C7B0A207735DB00F71E84 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F30C7B09207735DB00F71E84 /* Assets.xcassets */; };
+		F30C7B0D20785F5B00F71E84 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F30C7B0C20785F5B00F71E84 /* Assets.xcassets */; };
+		F30C7B0F20785F7300F71E84 /* tabbar.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F30C7B0E20785F7300F71E84 /* tabbar.xcassets */; };
+		F30C7B12207863FA00F71E84 /* SXTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F30C7B11207863FA00F71E84 /* SXTabBarViewController.m */; };
 		F33126352073FAE0000AB485 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F33126342073FAE0000AB485 /* AppDelegate.m */; };
-		F33126382073FAE0000AB485 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F33126372073FAE0000AB485 /* ViewController.m */; };
+		F33126382073FAE0000AB485 /* SXBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F33126372073FAE0000AB485 /* SXBaseViewController.m */; };
 		F33126432073FAE2000AB485 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F33126422073FAE2000AB485 /* main.m */; };
 		F331264D2073FAE2000AB485 /* OZHTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F331264C2073FAE2000AB485 /* OZHTests.m */; };
 		F33126582073FAE2000AB485 /* OZHUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F33126572073FAE2000AB485 /* OZHUITests.m */; };
@@ -45,12 +47,15 @@
 		A3415CCAEB6048CA8B6D9010 /* Pods_OZHUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OZHUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3C1B56465B47E5F507CC9D6 /* Pods-OZHTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OZHTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-OZHTests/Pods-OZHTests.release.xcconfig"; sourceTree = "<group>"; };
 		E26F26B1380297D6D51101D5 /* Pods-OZHUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OZHUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OZHUITests/Pods-OZHUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		F30C7B09207735DB00F71E84 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F30C7B0C20785F5B00F71E84 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F30C7B0E20785F7300F71E84 /* tabbar.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = tabbar.xcassets; sourceTree = "<group>"; };
+		F30C7B10207863FA00F71E84 /* SXTabBarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SXTabBarViewController.h; sourceTree = "<group>"; };
+		F30C7B11207863FA00F71E84 /* SXTabBarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SXTabBarViewController.m; sourceTree = "<group>"; };
 		F33126302073FAE0000AB485 /* OZH.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OZH.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F33126332073FAE0000AB485 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F33126342073FAE0000AB485 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		F33126362073FAE0000AB485 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		F33126372073FAE0000AB485 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F33126362073FAE0000AB485 /* SXBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SXBaseViewController.h; sourceTree = "<group>"; };
+		F33126372073FAE0000AB485 /* SXBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SXBaseViewController.m; sourceTree = "<group>"; };
 		F33126412073FAE2000AB485 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F33126422073FAE2000AB485 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F33126482073FAE2000AB485 /* OZHTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OZHTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -112,6 +117,15 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		F30C7B0B20785F5B00F71E84 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				F30C7B0C20785F5B00F71E84 /* Assets.xcassets */,
+				F30C7B0E20785F7300F71E84 /* tabbar.xcassets */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
 		F33126272073FAE0000AB485 = {
 			isa = PBXGroup;
 			children = (
@@ -137,13 +151,15 @@
 		F33126322073FAE0000AB485 /* OZH */ = {
 			isa = PBXGroup;
 			children = (
-				F30C7B09207735DB00F71E84 /* Assets.xcassets */,
+				F30C7B0B20785F5B00F71E84 /* Resource */,
 				F33126332073FAE0000AB485 /* AppDelegate.h */,
 				F33126342073FAE0000AB485 /* AppDelegate.m */,
-				F33126362073FAE0000AB485 /* ViewController.h */,
-				F33126372073FAE0000AB485 /* ViewController.m */,
+				F33126362073FAE0000AB485 /* SXBaseViewController.h */,
+				F33126372073FAE0000AB485 /* SXBaseViewController.m */,
 				F33126412073FAE2000AB485 /* Info.plist */,
 				F33126422073FAE2000AB485 /* main.m */,
+				F30C7B10207863FA00F71E84 /* SXTabBarViewController.h */,
+				F30C7B11207863FA00F71E84 /* SXTabBarViewController.m */,
 			);
 			path = OZH;
 			sourceTree = "<group>";
@@ -278,7 +294,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F30C7B0A207735DB00F71E84 /* Assets.xcassets in Resources */,
+				F30C7B0D20785F5B00F71E84 /* Assets.xcassets in Resources */,
+				F30C7B0F20785F7300F71E84 /* tabbar.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -453,7 +470,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F33126382073FAE0000AB485 /* ViewController.m in Sources */,
+				F33126382073FAE0000AB485 /* SXBaseViewController.m in Sources */,
+				F30C7B12207863FA00F71E84 /* SXTabBarViewController.m in Sources */,
 				F33126432073FAE2000AB485 /* main.m in Sources */,
 				F33126352073FAE0000AB485 /* AppDelegate.m in Sources */,
 			);
