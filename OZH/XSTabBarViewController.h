@@ -1,5 +1,5 @@
 //
-//  SXTabBarViewController.h
+//  XSTabBarViewController.h
 //  OZH
 //
 //  Created by 李兴东 on 2018/4/7.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SXTabBarViewController : UITabBarController
+@interface XSTabBarViewController : UITabBarController
 
 @end

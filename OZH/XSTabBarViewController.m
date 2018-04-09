@@ -6,14 +6,14 @@
 //  Copyright © 2018年 xingshao. All rights reserved.
 //
 
-#import "SXTabBarViewController.h"
-#import "SXBaseViewController.h"
+#import "XSTabBarViewController.h"
+#import "XSBaseViewController.h"
 
-@interface SXTabBarViewController ()
+@interface XSTabBarViewController ()
 
 @end
 
-@implementation SXTabBarViewController
+@implementation XSTabBarViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -24,21 +24,21 @@
 - (void)setUpSubviews{
     
     
-    SXBaseViewController *cv1 = [[SXBaseViewController alloc] init];
+    XSBaseViewController *cv1 = [[XSBaseViewController alloc] init];
     cv1.title = @"首页";
     cv1.tabBarItem.title = @"首页";
     cv1.tabBarItem.image = [UIImage imageNamed:@"tabbar_feed_normal"];
     cv1.tabBarItem.selectedImage = [UIImage imageNamed:@"tabbar_feed_highlight"];
     UINavigationController *nav1 = [[UINavigationController alloc] initWithRootViewController:cv1];
 
-    SXBaseViewController *cv2 = [[SXBaseViewController alloc] init];
+    XSBaseViewController *cv2 = [[XSBaseViewController alloc] init];
     cv2.title = @"消息";
     cv2.tabBarItem.title = @"消息";
     cv2.tabBarItem.image = [UIImage imageNamed:@"tabbar_notification_normal"];
     cv2.tabBarItem.selectedImage = [UIImage imageNamed:@"tabbar_notification_highlight"];
     UINavigationController *nav2 = [[UINavigationController alloc] initWithRootViewController:cv2];
     
-    SXBaseViewController *cv3 = [[SXBaseViewController alloc] init];
+    XSBaseViewController *cv3 = [[XSBaseViewController alloc] init];
     cv3.title = @"我的";
     cv3.tabBarItem.title = @"我的";
     cv3.tabBarItem.image = [UIImage imageNamed:@"tabbar_mine_normal"];

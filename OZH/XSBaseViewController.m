@@ -6,13 +6,13 @@
 //  Copyright © 2018年 xingshao. All rights reserved.
 //
 
-#import "SXBaseViewController.h"
+#import "XSBaseViewController.h"
 
-@interface SXBaseViewController ()
+@interface XSBaseViewController ()
 
 @end
 
-@implementation SXBaseViewController
+@implementation XSBaseViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

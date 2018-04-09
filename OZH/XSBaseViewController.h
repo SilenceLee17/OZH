@@ -1,5 +1,5 @@
 //
-//  SXBaseViewController.h
+//  XSBaseViewController.h
 //  OZH
 //
 //  Created by 李兴东 on 2018/4/4.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SXBaseViewController : UIViewController
+@interface XSBaseViewController : UIViewController
 
 
 @end
