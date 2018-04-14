@@ -21,6 +21,7 @@
 		F3ACF7CC207BA45A00095C15 /* XSClientManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F3ACF7CB207BA45A00095C15 /* XSClientManager.m */; };
 		F3ACF7CE207BB20900095C15 /* XSClientManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F3ACF7CD207BB20900095C15 /* XSClientManagerTests.m */; };
 		F3ECF4F12081DBDA00306BF4 /* XSZHHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3ECF4F02081DBDA00306BF4 /* XSZHHomeViewController.m */; };
+		F3ECF4F42081EA1900306BF4 /* XSZHTopStory.m in Sources */ = {isa = PBXBuildFile; fileRef = F3ECF4F32081EA1900306BF4 /* XSZHTopStory.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +73,8 @@
 		F3ACF7CD207BB20900095C15 /* XSClientManagerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XSClientManagerTests.m; sourceTree = "<group>"; };
 		F3ECF4EF2081DBDA00306BF4 /* XSZHHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XSZHHomeViewController.h; sourceTree = "<group>"; };
 		F3ECF4F02081DBDA00306BF4 /* XSZHHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XSZHHomeViewController.m; sourceTree = "<group>"; };
+		F3ECF4F22081EA1900306BF4 /* XSZHTopStory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XSZHTopStory.h; sourceTree = "<group>"; };
+		F3ECF4F32081EA1900306BF4 /* XSZHTopStory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XSZHTopStory.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -199,6 +202,8 @@
 			children = (
 				F3ECF4EF2081DBDA00306BF4 /* XSZHHomeViewController.h */,
 				F3ECF4F02081DBDA00306BF4 /* XSZHHomeViewController.m */,
+				F3ECF4F22081EA1900306BF4 /* XSZHTopStory.h */,
+				F3ECF4F32081EA1900306BF4 /* XSZHTopStory.m */,
 			);
 			path = ZH;
 			sourceTree = "<group>";
@@ -497,6 +502,7 @@
 				F33126382073FAE0000AB485 /* XSBaseViewController.m in Sources */,
 				F30C7B12207863FA00F71E84 /* XSTabBarViewController.m in Sources */,
 				F33126432073FAE2000AB485 /* main.m in Sources */,
+				F3ECF4F42081EA1900306BF4 /* XSZHTopStory.m in Sources */,
 				F33126352073FAE0000AB485 /* AppDelegate.m in Sources */,
 				F3ACF7CC207BA45A00095C15 /* XSClientManager.m in Sources */,
 			);
@@ -653,7 +659,10 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = OZH/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = xingshao.OZH;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -668,7 +677,10 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = OZH/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = xingshao.OZH;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -682,7 +694,11 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = OZHTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = xingshao.OZHTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -697,7 +713,11 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = OZHTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = xingshao.OZHTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -711,7 +731,11 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = OZHUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = xingshao.OZHUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -725,7 +749,11 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = OZHUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = xingshao.OZHUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";

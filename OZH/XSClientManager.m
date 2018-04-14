@@ -8,6 +8,7 @@
 
 #import "XSClientManager.h"
 #import <AFNetworking/AFNetworking.h>
+#import <YYModel/YYModel.h>
 
 static id sharedInstance;
 
@@ -63,15 +64,23 @@ static id sharedInstance;
 }
 
 - (void)getTopstory:(NSInteger)count
+            success:(void(^)(XSZHTopStory *topStory))success
+            failure:(void(^)(NSError *error))failure
 {
     NSDictionary *parameters = @{
                                  @"limit":@(count),
                                  @"reverse_order":@(0)
                                  };
     [self.httpManager GET:@"/topstory/hot-list" parameters:parameters progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        
+        NSDictionary *dict = (NSDictionary *)responseObject;
+        XSZHTopStory *topStory = [XSZHTopStory yy_modelWithJSON:dict];
+        if (success) {
+            success(topStory);
+        }
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        
+        if (failure) {
+            failure(error);
+        }
     }];
 }
 

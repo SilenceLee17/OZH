@@ -9,16 +9,36 @@
 #import "XSZHHomeViewController.h"
 #import "XSClientManager.h"
 
-@interface XSZHHomeViewController ()
+@interface XSZHHomeViewController ()<UITableViewDataSource, UITableViewDelegate>
+
+@property (nonatomic, strong) UITableView *tableView;
+@property (nonatomic, strong) XSZHTopStory *topStory;
 
 @end
 
 @implementation XSZHHomeViewController
 
+- (instancetype)init{
+    self = [super init];
+    if (self) {
+        [self setupSubviews];
+    }
+    return self;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    [[XSClientManager sharedInstance] getTopstory:10];
+}
+
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    [[XSClientManager sharedInstance] getTopstory:10 success:^(XSZHTopStory *topStory) {
+        self.topStory = topStory;
+        [self.tableView reloadData];
+    } failure:^(NSError *error) {
+        
+    }];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -26,14 +46,29 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)setupSubviews{
+    _tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
+    [_tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"UITableViewCell"];
+    _tableView.delegate = self;
+    _tableView.dataSource = self;
+    [self.view addSubview:_tableView];
 }
-*/
+
+#pragma mark - UITableViewDataSource
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return self.topStory.questions.count;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"UITableViewCell"];
+    XSZHQuestion *question = _topStory.questions[indexPath.row];
+    cell.textLabel.text = question.answer.title;
+    return cell;
+}
+
+#pragma mark - UITableViewDelegate
 
 @end

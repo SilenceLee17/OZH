@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "XSZHTopStory.h"
 
 @interface XSClientManager : NSObject
 
@@ -14,6 +15,9 @@
 - (void)setUpBaseUrl:(NSURL *)baseUrl;
 - (void)setHeaderWithField:(NSString *)field andValue:(NSString *)value;
 
-- (void)getTopstory:(NSInteger)count;
+- (void)getTopstory:(NSInteger)count
+            success:(void(^)(XSZHTopStory *topStory))success
+            failure:(void(^)(NSError *error))failure;
+
 
 @end
