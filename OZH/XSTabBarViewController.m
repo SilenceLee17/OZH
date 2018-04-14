@@ -8,6 +8,7 @@
 
 #import "XSTabBarViewController.h"
 #import "XSBaseViewController.h"
+#import "XSZHHomeViewController.h"
 
 @interface XSTabBarViewController ()
 
@@ -24,7 +25,7 @@
 - (void)setUpSubviews{
     
     
-    XSBaseViewController *cv1 = [[XSBaseViewController alloc] init];
+    XSZHHomeViewController *cv1 = [[XSZHHomeViewController alloc] init];
     cv1.title = @"首页";
     cv1.tabBarItem.title = @"首页";
     cv1.tabBarItem.image = [UIImage imageNamed:@"tabbar_feed_normal"];

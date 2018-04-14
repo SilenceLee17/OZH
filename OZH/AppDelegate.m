@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "XSTabBarViewController.h"
+#import "XSClientManager.h"
 
 @interface AppDelegate ()
 
@@ -22,9 +23,16 @@
     XSTabBarViewController *tabBarViewController = [[XSTabBarViewController alloc] init];
     self.window.rootViewController = tabBarViewController;
     [self.window makeKeyAndVisible];
+    [self initConfig];
     return YES;
 }
 
+- (void)initConfig{
+    NSURL *url = [NSURL URLWithString:@"https://api.zhihu.com"];
+    [[XSClientManager sharedInstance] setUpBaseUrl:url];
+    NSString *authorization = @"Bearer 1.12VGcCAAAAAALAAAAYAJVTVvo8VqChxx_QRfztBhjRIh-0Umn1CqShg==";
+    [[XSClientManager sharedInstance] setHeaderWithField:@"Authorization" andValue:authorization];
+}
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

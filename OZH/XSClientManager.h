@@ -10,9 +10,10 @@
 
 @interface XSClientManager : NSObject
 
-@property (nonatomic, copy)NSString *testString;
-
 + (instancetype)sharedInstance;
-+ (instancetype)allocWithZone:(struct _NSZone *)zone;
+- (void)setUpBaseUrl:(NSURL *)baseUrl;
+- (void)setHeaderWithField:(NSString *)field andValue:(NSString *)value;
+
+- (void)getTopstory:(NSInteger)count;
 
 @end

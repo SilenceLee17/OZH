@@ -20,6 +20,7 @@
 		F33126582073FAE2000AB485 /* OZHUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F33126572073FAE2000AB485 /* OZHUITests.m */; };
 		F3ACF7CC207BA45A00095C15 /* XSClientManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F3ACF7CB207BA45A00095C15 /* XSClientManager.m */; };
 		F3ACF7CE207BB20900095C15 /* XSClientManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F3ACF7CD207BB20900095C15 /* XSClientManagerTests.m */; };
+		F3ECF4F12081DBDA00306BF4 /* XSZHHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3ECF4F02081DBDA00306BF4 /* XSZHHomeViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,8 @@
 		F3ACF7CA207BA45A00095C15 /* XSClientManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XSClientManager.h; sourceTree = "<group>"; };
 		F3ACF7CB207BA45A00095C15 /* XSClientManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XSClientManager.m; sourceTree = "<group>"; };
 		F3ACF7CD207BB20900095C15 /* XSClientManagerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XSClientManagerTests.m; sourceTree = "<group>"; };
+		F3ECF4EF2081DBDA00306BF4 /* XSZHHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XSZHHomeViewController.h; sourceTree = "<group>"; };
+		F3ECF4F02081DBDA00306BF4 /* XSZHHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XSZHHomeViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				F30C7B0B20785F5B00F71E84 /* Resource */,
+				F3ECF4EE2081DBAF00306BF4 /* ZH */,
 				F33126332073FAE0000AB485 /* AppDelegate.h */,
 				F33126342073FAE0000AB485 /* AppDelegate.m */,
 				F33126362073FAE0000AB485 /* XSBaseViewController.h */,
@@ -188,6 +192,15 @@
 				F33126592073FAE2000AB485 /* Info.plist */,
 			);
 			path = OZHUITests;
+			sourceTree = "<group>";
+		};
+		F3ECF4EE2081DBAF00306BF4 /* ZH */ = {
+			isa = PBXGroup;
+			children = (
+				F3ECF4EF2081DBDA00306BF4 /* XSZHHomeViewController.h */,
+				F3ECF4F02081DBDA00306BF4 /* XSZHHomeViewController.m */,
+			);
+			path = ZH;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -478,6 +491,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3ECF4F12081DBDA00306BF4 /* XSZHHomeViewController.m in Sources */,
 				F33126382073FAE0000AB485 /* XSBaseViewController.m in Sources */,
 				F30C7B12207863FA00F71E84 /* XSTabBarViewController.m in Sources */,
 				F33126432073FAE2000AB485 /* main.m in Sources */,

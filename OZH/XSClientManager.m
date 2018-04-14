@@ -7,8 +7,15 @@
 //
 
 #import "XSClientManager.h"
+#import <AFNetworking/AFNetworking.h>
 
 static id sharedInstance;
+
+@interface XSClientManager ()
+
+@property (nonatomic, strong) AFHTTPSessionManager *httpManager;
+
+@end
 
 @implementation XSClientManager
 
@@ -40,5 +47,34 @@ static id sharedInstance;
 {
     return sharedInstance;
 }
+
+#pragma mark - Public
+
+- (void)setUpBaseUrl:(NSURL *)baseUrl
+{
+    self.httpManager = [[AFHTTPSessionManager alloc] initWithBaseURL:baseUrl];
+}
+
+- (void)setHeaderWithField:(NSString *)field andValue:(NSString *)value
+{
+    if (field && value) {
+        [self.httpManager.requestSerializer setValue:value forHTTPHeaderField:field];
+    }
+}
+
+- (void)getTopstory:(NSInteger)count
+{
+    NSDictionary *parameters = @{
+                                 @"limit":@(count),
+                                 @"reverse_order":@(0)
+                                 };
+    [self.httpManager GET:@"/topstory/hot-list" parameters:parameters progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        
+    }];
+}
+
+#pragma mark - Private
 
 @end
